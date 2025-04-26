@@ -1,0 +1,132 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    color: #333;
+    background: #fefefe;
+  }
+  
+  img { max-width: 300px; height: 200;
+  object-fit: cover; }
+  
+  header, footer {
+    background: #000000;
+    color: #ffffff;
+    padding: 1em;
+    text-align: center;
+  }
+  
+  .logo-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .site-title {
+    font-size: 1rem
+    font-weight: bold;
+  }
+  
+  .logo { height: 50px; }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav li { margin: 0 1em; }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav a:focus, nav a:hover { text-decoration: underline; outline: 2px dashed yellow; }
+  
+  .hero {
+    background: url('hero-background.jpg') center/cover no-repeat;
+    color: #000000;
+    text-align: center;
+    padding: 4em 1em;
+  }
+  .hero h1{
+    font-size: 3em; /
+  margin: 0.5em 0;
+  color: #000000;
+  font-family: cursive;
+  }
+  .hero p {
+    font-family: 'Indie Flower', cursive;
+  }
+  
+  .hero button, button[type="submit"] {
+    background: #0066cc;
+    color: #fff;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+  }
+  
+  .hero button:focus, button[type="submit"]:focus { 
+    outline: 2px solid #ff0; 
+  }
+  
+  section { padding: 2em 1em; }
+  
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2em;
+    margin-top: 1em;
+  }
+  
+  .services-grid article {
+    background: #f4f4f4;
+    padding: 1em;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  form {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+  label{
+    font-weight:bold;
+  }
+  
+  input, textarea {
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+  }
+  
+  footer {
+    background: #000000;
+    color: #ccc;
+  }
+  
+  footer a img { height: 24px; margin: 0 0.5em; }
+  
+  @media (max-width: 1024px) {
+    .hero h1 { font-size: 2em; }
+  }
+  
+  @media (max-width: 600px) {
+    .nav-links { flex-direction: column; gap: 0.5em; }
+    .hero { padding: 2em 1em; }
+    .hero h1 { font-size: 1.5em; }
+    .hero button { font-size: 0.9em; }
+  }
+  
