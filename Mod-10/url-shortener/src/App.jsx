@@ -1,4 +1,4 @@
-import Header from './components/Header';
+import Header from 'src/components/Header';
 import Hero from './components/Hero';
 import ShortenForm from './components/ShortenForm';
 import LinkList from './components/LinkList';
