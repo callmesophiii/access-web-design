@@ -8,9 +8,9 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 3000;
 const PROD_URL = process.env.PROD_URL;
-// 1
+
 const whitelist = ["http://localhost:3000", PROD_URL];
-// 2
+
 const corsOptions = {
   origin: function (origin, callback) {
     if (whitelist.indexOf(origin) !== -1) {
@@ -20,7 +20,7 @@ const corsOptions = {
     }
   }
 }
-// 3
+
 app.use(cors());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
